@@ -1,5 +1,11 @@
 # @dinantitech/rsvp
 
+## 0.1.1
+
+### Patch Changes
+
+- df69185: update access public for publish npm
+
 ## 0.1.0
 
 ### Minor Changes
