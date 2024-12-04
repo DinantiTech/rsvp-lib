@@ -16,8 +16,8 @@ npm install @dinantitech/rsvp
 ```
 
 ##### Use Javascript / Node js
-```JavaScript
-const { RSVP } = require("@dinantitech/rsvp);
+```Typescript
+const { RSVP } = require("@dinantitech/rsvp");
 
 const scriptID = 'your_google_script_id_here'; // Replace with your Google Apps Script ID
 const rsvp = new RSVP({ scriptID });
