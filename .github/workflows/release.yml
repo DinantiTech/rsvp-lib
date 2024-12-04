@@ -8,7 +8,7 @@ permissions: {} #reset
 jobs:
   release:
     # IMPORTANT: prevent this action from running on forks
-    if: github.repository == 'rspv-library'
+    if: github.repository == 'rspv-lib'
     permissions:
       contents: write # to create release (changesets/action)
       pull-requests: write # to create pull request (changesets/action)
@@ -30,4 +30,4 @@ jobs:
           publish: pnpm run release
         env:
           GITHUB_TOKEN: ${{ secrets.TOKEN_GITHUB }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NPM_TOKEN: ${{ secrets.TOKEN_NPM }}
