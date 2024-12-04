@@ -1,5 +1,11 @@
 # @dinantitech/rsvp
 
+## 2.0.4
+
+### Patch Changes
+
+- 291d684: update README
+
 ## 2.0.3
 
 ### Patch Changes
