@@ -1,7 +1,7 @@
 {
   "name": "@dinantitech/rsvp",
   "version": "0.0.1",
-  "description": "A dummy library to make a library deployment example",
+  "description": "Library RSVP From Dinanti ID",
   "main": "index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
