@@ -1,5 +1,11 @@
 # @dinantitech/rsvp
 
+## 1.0.0
+
+### Major Changes
+
+- a503f63: fix issue publish to NPM
+
 ## 0.1.1
 
 ### Patch Changes
