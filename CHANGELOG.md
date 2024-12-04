@@ -1,5 +1,11 @@
 # @dinantitech/rsvp
 
+## 2.0.1
+
+### Patch Changes
+
+- 10c4e03: fix entry main
+
 ## 2.0.0
 
 ### Major Changes
