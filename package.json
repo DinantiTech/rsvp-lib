@@ -1,6 +1,6 @@
 {
   "name": "@dinantitech/rsvp",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Library RSVP From Dinanti ID",
   "main": "index.js",
   "module": "dist/index.mjs",
