@@ -1,0 +1,25 @@
+{
+  "name": "@dinantitech/rsvp",
+  "version": "0.0.1",
+  "description": "A dummy library to make a library deployment example",
+  "main": "index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "/dist"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "release": "pnpm run build && changeset publish"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "tsup": "^8.3.5",
+    "typescript": "^5.7.2"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.27.10"
+  }
+}
