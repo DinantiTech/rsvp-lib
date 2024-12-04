@@ -8,7 +8,7 @@ export class RSVP {
     }
 
     public async getRSVP<T>({ action, sheetID, sheetName }: getRSVPTypes ): Promise<T> {
-        const url = `${this.BASE_URL}?action=${action}&tableName=${sheetName}&sheetId=${sheetID}`
+        const url = `${this.BASE_URL}?action=${action}&sheetName=${sheetName}&sheetID=${sheetID}`
         const result = await fetch(url, { method: 'GET' })
 
         return await result.json()
