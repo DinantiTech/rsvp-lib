@@ -1,5 +1,11 @@
 # @dinantitech/rsvp
 
+## 2.0.3
+
+### Patch Changes
+
+- 81e2471: added file README.md
+
 ## 2.0.2
 
 ### Patch Changes
