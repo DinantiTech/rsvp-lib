@@ -1,5 +1,11 @@
 # @dinantitech/rsvp
 
+## 2.0.2
+
+### Patch Changes
+
+- 6d73bbf: fix issue sent parameter get data
+
 ## 2.0.1
 
 ### Patch Changes
