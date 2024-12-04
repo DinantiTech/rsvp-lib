@@ -1,5 +1,11 @@
 # @dinantitech/rsvp
 
+## 2.0.0
+
+### Major Changes
+
+- 0af2b0a: create class RSVP and get RSVP
+
 ## 1.0.0
 
 ### Major Changes
