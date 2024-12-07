@@ -1,5 +1,11 @@
 # @dinantitech/rsvp
 
+## 2.0.5
+
+### Patch Changes
+
+- edc2676: added create RSVP
+
 ## 2.0.4
 
 ### Patch Changes
