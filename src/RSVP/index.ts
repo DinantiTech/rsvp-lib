@@ -9,23 +9,31 @@ export class RSVP {
         this.BASE_URL = `https://script.google.com/macros/s/${scriptID ?? appScriptID}/exec?sheetName=${sheetName}&sheetID=${sheetID}`;
     }
 
-    public async getRSVP<T>({ action }: getRSVPTypes): Promise<T> {
+    public async getRSVP<T>({ action }: getRSVPTypes = {}): Promise<T> {
         const url = `${this.BASE_URL}&action=${action ?? 'GET_RSVP'}`
-        const result = await fetch(url, { method: 'GET' })
+        const response = await fetch(url, { method: 'GET' })
 
-        return await result.json()
+        if (!response.ok) {
+            throw new Error(`Failed to get RSVP: ${response.status} ${response.statusText}`);
+        }
+
+        return await response.json()
     }
 
     public async createRSVP<T>({ action, attendance, message, name, time }: createRSVPType): Promise<T> {
-        const url = `${this.BASE_URL}?action=${action}&name=${name}&message=${message}&attendance=${attendance}&createdAt=${time}`
+        const url = `${this.BASE_URL}?action=${action ?? 'POST_RSVP'}&name=${name}&message=${message}&attendance=${attendance}&createdAt=${new Date(time).toDateString()}`
 
-        const result = await fetch(url, {
+        const response = await fetch(url, {
             headers: {
                 Accept: 'application/json'
             },
             method: 'POST'
         });
 
-        return await result.json()
+        if (!response.ok) {
+            throw new Error(`Failed to get RSVP: ${response?.status} ${response?.statusText}`);
+        }
+
+        return await response.json()
     }
 }
