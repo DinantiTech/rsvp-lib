@@ -9,9 +9,11 @@ export type getRSVPTypes = {
 }
 
 export type createRSVPType = {
-    name: string;
-    message: string;
-    attendance: string;
-    time: Date;
     action?: string;
+    name?: string;
+    message?: string;
+    attendance?: string;
+    avatar?: string;
+    additional_info?: string;
+    time?: Date;
 }
