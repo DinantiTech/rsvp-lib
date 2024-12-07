@@ -13,5 +13,5 @@ export type createRSVPType = {
     message: string;
     attendance: string;
     time: Date;
-    action: string;
+    action?: string;
 }
