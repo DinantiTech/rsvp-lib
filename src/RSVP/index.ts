@@ -4,7 +4,9 @@ export class RSVP {
     private BASE_URL: string;
 
     constructor({ scriptID, sheetID, sheetName }: classRSVPType) {
-        this.BASE_URL = `https://script.google.com/macros/s/${scriptID}/exec?sheetName=${sheetName}&sheetID=${sheetID}`
+        const appScriptID = 'AKfycbyLu-qRh882YXjuhcO13m6WSV1pzyfIGvAAF9peeBul4d42zEfsj2_eKnGp3JuDCCSL';
+
+        this.BASE_URL = `https://script.google.com/macros/s/${scriptID ?? appScriptID}/exec?sheetName=${sheetName}&sheetID=${sheetID}`;
     }
 
     public async getRSVP<T>({ action }: getRSVPTypes): Promise<T> {
