@@ -1,5 +1,11 @@
 # @dinantitech/rsvp
 
+## 2.0.7
+
+### Patch Changes
+
+- 820edbc: added error message and adjust parameters get and post RSVP
+
 ## 2.0.6
 
 ### Patch Changes
