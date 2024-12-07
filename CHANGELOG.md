@@ -1,5 +1,11 @@
 # @dinantitech/rsvp
 
+## 2.0.9
+
+### Patch Changes
+
+- 971236a: update README file and adjust parameter create RSVP
+
 ## 2.0.8
 
 ### Patch Changes
