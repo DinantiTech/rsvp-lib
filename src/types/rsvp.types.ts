@@ -1,7 +1,7 @@
 export type classRSVPType = {
     sheetName: string;
     sheetID: string;
-    scriptID: string;
+    scriptID?: string;
 }
 
 export type getRSVPTypes = {
