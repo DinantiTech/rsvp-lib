@@ -21,7 +21,7 @@ export class RSVP {
     }
 
     public async createRSVP<T>({ action, attendance, message, name, time }: createRSVPType): Promise<T> {
-        const url = `${this.BASE_URL}&action=${action ?? 'POST_RSVP'}&name=${name}&message=${message}&attendance=${attendance}&createdAt=${new Date(time).toDateString()}`
+        const url = `${this.BASE_URL}&action=${action ?? 'POST_RSVP'}&name=${name}&message=${message}&attendance=${attendance}&createdAt=${new Date(time ?? new Date).toDateString()}`
 
         const response = await fetch(url, {
             headers: {
