@@ -1,5 +1,11 @@
 # @dinantitech/rsvp
 
+## 2.0.10
+
+### Patch Changes
+
+- 5acbda0: adjust paramater create RSVP
+
 ## 2.0.9
 
 ### Patch Changes
