@@ -1,5 +1,11 @@
 # @dinantitech/rsvp
 
+## 2.0.6
+
+### Patch Changes
+
+- ca0ecda: change by default app script ID
+
 ## 2.0.5
 
 ### Patch Changes
