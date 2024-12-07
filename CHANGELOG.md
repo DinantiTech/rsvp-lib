@@ -1,5 +1,11 @@
 # @dinantitech/rsvp
 
+## 2.0.8
+
+### Patch Changes
+
+- 9c7d2db: fix issue create RSVP
+
 ## 2.0.7
 
 ### Patch Changes
