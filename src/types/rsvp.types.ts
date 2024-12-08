@@ -15,5 +15,4 @@ export type createRSVPType = {
     attendance?: string;
     avatar?: string;
     additional_info?: string;
-    time?: Date;
 }
