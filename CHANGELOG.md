@@ -1,5 +1,11 @@
 # @dinantitech/rsvp
 
+## 2.0.12
+
+### Patch Changes
+
+- e3f8b76: [ADJUST] auto created "createdAt" from app script
+
 ## 2.0.11
 
 ### Patch Changes
