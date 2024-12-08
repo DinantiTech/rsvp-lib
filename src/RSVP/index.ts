@@ -44,9 +44,8 @@ export class RSVP {
      * @param {string} params.attendance - Attendance status (e.g., 'Yes', 'No').
      * @param {string} params.avatar - URL of the person's avatar.
      * @param {string} params.additional_info - Additional information for the RSVP.
-     * @param {Date | string} params.time - Timestamp for the RSVP (default: current date).
      */
-    public async createRSVP<T>({ action, attendance, message, name, time, additional_info, avatar }: createRSVPType): Promise<T> {
+    public async createRSVP<T>({ action, attendance, message, name, additional_info, avatar }: createRSVPType): Promise<T> {
         // Base URL
         const baseUrl = `${this.BASE_URL}`;
 
@@ -62,9 +61,6 @@ export class RSVP {
         if (attendance) params.append('attendance', attendance);
         if (avatar) params.append('avatar', avatar);
         if (additional_info) params.append('additional_info', additional_info);
-
-        // Add timestamp
-        params.append('createdAt', new Date(time ?? new Date()).toDateString());
 
         // Construct the full URL
         const url = `${baseUrl}&${params.toString()}`;
