@@ -1,5 +1,11 @@
 # @dinantitech/rsvp
 
+## 2.0.11
+
+### Patch Changes
+
+- 321cc94: fix issue create RSVP
+
 ## 2.0.10
 
 ### Patch Changes
