@@ -67,7 +67,7 @@ export class RSVP {
         params.append('createdAt', new Date(time ?? new Date()).toDateString());
 
         // Construct the full URL
-        const url = `${baseUrl}?${params.toString()}`;
+        const url = `${baseUrl}&${params.toString()}`;
 
         // Send the request
         const response = await fetch(url, {
